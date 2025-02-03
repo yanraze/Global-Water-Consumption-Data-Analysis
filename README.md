@@ -8,11 +8,15 @@ Total Water Consumption (2020)
 
 [Tableau Dashboard](https://public.tableau.com/views/WaterConsumptionDashboard_17385586007740/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-* Total Population Cases, and Deaths
-* Covid-19 Cases per Continent
-* Covid-19 Deaths per Continent
-* Population Infected per Country
-* Deaths per Country
+* Global Water Consumption
+* Global Freshwater Consumption
+* Global Average per Capita
+* Freshwater Consumption per Country
+* Water Consumption per Capita per Country
+* Top 5 Total Water Consuming Countries
+* Agricultural Water Usage | Top 10 Countries
+* Industrial Water Usage | Top 10 Countries
+* Municipal Water Usage | Top 10 Countries 
 
 ![Dashboard](https://github.com/yanraze/Global-Water-Consumption-Data-Analysis/blob/main/Water%20Consumption%20Dashboard.png)
 
