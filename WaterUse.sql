@@ -31,7 +31,7 @@ FROM DAProject..WaterConsumptionbyCountry
 SELECT SUM([TOTAL_FRESHWATER_WITHDRAWAL_(BILLION M3)]) AS [Total_World_Freshwater_Consumption_(BILLION M3)]
 FROM DAProject..WaterConsumptionbyCountry
 
---Weighted Average of World's Water Consumption per Capita (m³/person)
+--Weighted Average of World's Water Consumption per Capita (mÂ³/person)
 SELECT ROUND(SUM(WaterConsumption.TotalWaterWithdrawal) / SUM(WaterConsumption.Estimated_Population), 2) AS WorldAvgWaterPerCapita_m3
 FROM (
     SELECT 
@@ -64,18 +64,33 @@ Select TOP(5)country,  [TOTAL_FRESHWATER_WITHDRAWAL_(BILLION M3)]
 FROM DAProject..WaterConsumptionbyCountry
 Order by  [TOTAL_FRESHWATER_WITHDRAWAL_(BILLION M3)] DESC
 
---Top 10 Countries with water used in Agriculture
-Select TOP(10)country, [%_OF_TOTAL WITHDRAWAL_USED_BY_AGRICULTURE]
-FROM DAProject..WaterConsumptionbyCountry
-Order by [%_OF_TOTAL WITHDRAWAL_USED_BY_AGRICULTURE] DESC
+-- Total Water Consumption by Sector per Country
+DROP TABLE IF EXISTS #TotalSectorWaterConsumption
 
---TOP 10 Countries with water used in Industry
-Select TOP(10)country, [%_OF_TOTAL_WITHDRAWAL_USED_BY_INDUSTRY]
-FROM DAProject..WaterConsumptionbyCountry
-Order by [%_OF_TOTAL_WITHDRAWAL_USED_BY_INDUSTRY] DESC
+CREATE TABLE #TotalSectorWaterConsumption (
+	country VARCHAR(255),
+	[TOTAL_WATER_WITHDRAWAL_(BILLION M3)] DECIMAL(18,2),
+	[%_OF_TOTAL WITHDRAWAL_USED_BY_AGRICULTURE] DECIMAL(18,2),
+	[%_OF_TOTAL_WITHDRAWAL_USED_BY_INDUSTRY] DECIMAL(18,2),
+	[%_OF_TOTAL_WITHDRAWAL_USED_BY_MUNICIPALITIES] DECIMAL(18,2),
+	agricultural_water_consumption DECIMAL(18,2),
+	industrial_water_consumption DECIMAL(18,2),
+	municipal_water_consumption DECIMAL(18,2)
+)
+GO
 
---TOP 10 Countries with water used in Municipalities
-Select TOP(10)country, [%_OF_TOTAL_WITHDRAWAL_USED_BY_MUNICIPALITIES]
+INSERT INTO #TotalSectorWaterConsumption 
+SELECT country, 
+       [TOTAL_WATER_WITHDRAWAL_(BILLION M3)],
+       [%_OF_TOTAL WITHDRAWAL_USED_BY_AGRICULTURE],
+	   [%_OF_TOTAL_WITHDRAWAL_USED_BY_INDUSTRY],
+	   [%_OF_TOTAL_WITHDRAWAL_USED_BY_MUNICIPALITIES],
+       ROUND([TOTAL_WATER_WITHDRAWAL_(BILLION M3)] * ([%_OF_TOTAL WITHDRAWAL_USED_BY_AGRICULTURE] / 100), 2) AS agricultural_water_consumption,
+	   ROUND([TOTAL_WATER_WITHDRAWAL_(BILLION M3)] * ([%_OF_TOTAL_WITHDRAWAL_USED_BY_INDUSTRY] / 100), 2) AS industrial_water_consumption,
+	   ROUND([TOTAL_WATER_WITHDRAWAL_(BILLION M3)] * ([%_OF_TOTAL_WITHDRAWAL_USED_BY_MUNICIPALITIES] / 100), 2) AS municipal_water_consumption
 FROM DAProject..WaterConsumptionbyCountry
-Order by [%_OF_TOTAL_WITHDRAWAL_USED_BY_MUNICIPALITIES] DESC
+GO
 
+SELECT * 
+FROM #TotalSectorWaterConsumption
+--DROP TABLE #AgriculturalWaterConsumption;
