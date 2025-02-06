@@ -6,7 +6,7 @@ Total Water Consumption (2020)
 * Microsoft SQL Server Management Studio
 * Tableau Public
 
-[Tableau Dashboard](https://public.tableau.com/views/WaterConsumptionDashboard_17385586007740/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[Tableau Dashboard](https://public.tableau.com/views/WaterConsumptionDashboard_17388087485490/Home?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 * Global Water Consumption
 * Global Freshwater Consumption
