@@ -1,12 +1,24 @@
-# GLOBAL WATER CONSUMPTION DATA ANALYSIS
+# GLOBAL WATER CONSUMPTION ANALYSIS
 
-Total Water Consumption (2020)
+## OVERVIEW
+A comprehensive analysis of global water consumption data for 2020, focusing on key metrics such as total global water consumption, total freshwater consumption, average water per capita water usage, water consumption per country, and sectoral breakdown (agriculture, industry, and municipal).
 
-* Microsoft SQL 
+## TOOLS
+
+* Microsoft Excel
+* SQL Server 
 * Microsoft SQL Server Management Studio
 * Tableau Public
 
+## DATASET
+
+Water Consumption Data Source: [Water Consumption by Country ](https://worldpopulationreview.com/country-rankings/water-consumption-by-country)
+
+## TABLEAU PUBLIC
+
 [Tableau Dashboard](https://public.tableau.com/views/WaterConsumptionDashboard_17388087485490/Home?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+## VISUALIZATIONS
 
 * Global Water Consumption
 * Global Freshwater Consumption
@@ -22,11 +34,40 @@ Total Water Consumption (2020)
 ![Industry](https://github.com/yanraze/Global-Water-Consumption-Data-Analysis/blob/main/Industrial.png)
 ![Municipality](https://github.com/yanraze/Global-Water-Consumption-Data-Analysis/blob/main/Municipal.png)
 
-Icons From Flaticon: 
-* Logo - <a href="https://www.flaticon.com/free-icons/save-water" title="save water icons">Save water icons created by Prosymbols Premium - Flaticon</a>
-* Back arrow - <a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Kirill Kazachek - Flaticon</a>
-* Farmer - <a href="https://www.flaticon.com/free-icons/agriculture" title="agriculture icons">Agriculture icons created by ADMS ICons - Flaticon</a>
-* Industry - <a href="https://www.flaticon.com/free-icons/factory" title="factory icons">Factory icons created by ADMS ICons - Flaticon</a>
-* Town -<a href="https://www.flaticon.com/free-icons/urban" title="urban icons">Urban icons created by ADMS ICons - Flaticon</a>
+## INSIGHTS
 
-Dataset Source: [Water Consumption by Country ](https://worldpopulationreview.com/country-rankings/water-consumption-by-country)
+- Total Global Water Consumption: 4,032 billion m³  
+- Total Freshwater Consumption: 3,896 billion m³  
+- Average Water Consumption Per Capita: 517.96 m³  
+
+- **Top Countries by Freshwater Consumption:**  
+  - **India**: 647.5 billion m³ (highest)  
+  - **China**: 568.5 billion m³  
+  - **United States**: 444.4 billion m³  
+
+- Highest Water Consumption Per Capita (2020):
+  - Turkmenistan: 4,351 m³ per person  
+
+- Agricultural Sector (highest): 
+  - India: 688.0 Billion m³
+
+- Industrial Sector (highest): 
+  - United States: 209.7 Billion m³
+ 
+- Municipal Sector (highest): 
+  - China: 117.0 Billion m³
+
+## RECOMENDATIONS
+
+- Strengthen policies in high-consumption countries (India, China, U.S.) and promote water-efficient technologies.
+
+- Reduce India’s high agricultural water consumption with drip irrigation, rainwater harvesting, and sustainable farming.
+
+- Encourage water recycling in the U.S. and enforce stricter regulations on industrial water use.
+
+- Invest in smart water grids and leak detection in China to reduce municipal waste.
+
+- Investigate and curb excessive water use in Turkmenistan through efficiency programs.
+
+- Promote international partnerships and public-private initiatives for sustainable water management.
+
