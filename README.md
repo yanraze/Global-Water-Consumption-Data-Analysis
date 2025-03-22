@@ -16,7 +16,7 @@ Water Consumption Data Source: [Water Consumption by Country ](https://worldpopu
 
 ## TABLEAU PUBLIC
 
-[Tableau Dashboard](https://public.tableau.com/views/WaterConsumptionDashboard_17388087485490/Home?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[Tableau Dashboard](https://public.tableau.com/views/WaterConsumptionDashboard_17388087485490/HomePage?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## VISUALIZATIONS
 
