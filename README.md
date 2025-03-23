@@ -29,10 +29,10 @@ Water Consumption Data Source: [Water Consumption by Country ](https://worldpopu
 * Industrial Water Usage | Top 5 Countries
 * Municipal Water Usage | Top 5 Countries 
 
-![Home](https://github.com/yanraze/Global-Water-Consumption-Data-Analysis/blob/main/Home.png)
-![Agriculture](https://github.com/yanraze/Global-Water-Consumption-Data-Analysis/blob/main/Agricultural.png)
-![Industry](https://github.com/yanraze/Global-Water-Consumption-Data-Analysis/blob/main/Industrial.png)
-![Municipality](https://github.com/yanraze/Global-Water-Consumption-Data-Analysis/blob/main/Municipal.png)
+![Home](https://github.com/yanraze/Global-Water-Consumption-Data-Analysis/blob/main/Home%20Page.png)
+![Agriculture](https://github.com/yanraze/Global-Water-Consumption-Data-Analysis/blob/main/Agricultural%20Page.png )
+![Industry](https://github.com/yanraze/Global-Water-Consumption-Data-Analysis/blob/main/Industrial%20Page.png)
+![Municipality](https://github.com/yanraze/Global-Water-Consumption-Data-Analysis/blob/main/Municipal%20Page.png )
 
 ## INSIGHTS
 
